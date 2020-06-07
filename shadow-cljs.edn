@@ -21,6 +21,15 @@
                        :devtools   {:preloads   [com.fulcrologic.fulcro.inspect.preload]
                                     :after-load com.example.client/refresh}}
 
+            :checker  {:target     :browser
+                       :output-dir "resources/public/js/checker"
+                       :asset-path "/js/checker"
+                       :modules    {:main {:init-fn com.example.typecheck/start}}
+                       :devtools   {:after-load         com.example.typecheck/start
+                                    :http-port          8080
+                                    :http-resource-root "public"
+                                    :http-root          "resources/public"}}
+
             :test     {:target           :browser-test
                        :test-dir         "resources/public/js/test"
                        :ns-regexp        "-spec$"
