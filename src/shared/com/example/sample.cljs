@@ -23,7 +23,9 @@
 
 (>>defn add-salutation
   [p]
-  ^{:a (s/keys :req [:person/age])} [:a => :a]
+  ;; TODO: type variables. On parameter specify minimum requirements, duplicating to output indicates that the
+  ;; shape of the real data wasn't "harmed" and it should still be considered the same kind of thing it was going in
+  ^{:a (s/keys :req [:person/name])} [:a => :a]
   (update p :person/name (fn [n] (str "Hi, " n))))
 
 (>>defn manipulate-person
@@ -32,5 +34,4 @@
   (let [p  (new-person "Bob" 33)
         p2 (add-salutation p)
         p3 (bump-age p2)]
-    p3
-    42))
+    p3))
