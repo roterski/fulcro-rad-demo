@@ -45,7 +45,8 @@
                        :extra-deps {juxt/crux-core                  {:mvn/version "21.02-1.15.0-beta"}
                                     juxt/crux-rocksdb               {:mvn/version "21.02-1.15.0-beta"}
                                     juxt/crux-jdbc                  {:mvn/version "21.02-1.15.0-beta"}
-                                    roterski/fulcro-rad-crux        {:local/root "/Users/pio/projects/fulcro-rad/fulcro-rad-crux"}}}
+                                    roterski/fulcro-rad-crux        {:git/url "https://github.com/roterski/fulcro-rad-crux"
+                                                                     :sha "c29be4e29440fe851a474ff73d17dd44078f2142"}}}
 
            :run-tests {:main-opts  ["-m" "kaocha.runner"]
                        :extra-deps {lambdaisland/kaocha {:mvn/version "1.0.700"}}}
