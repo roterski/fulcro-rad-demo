@@ -1,7 +1,6 @@
 (ns com.example.components.crux
   (:require
-   [com.fulcrologic.rad.database-adapters.crux :as crux]
-   [com.fulcrologic.rad.database-adapters.crux-options :as co]
+   [roterski.fulcro.rad.database-adapters.crux :as crux]
    [mount.core :refer [defstate]]
    [com.example.components.config :refer [config]]))
 

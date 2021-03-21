@@ -3,7 +3,7 @@
    [com.example.model :refer [all-attributes]]
    [mount.core :refer [defstate]]
    [com.fulcrologic.rad.resolvers :as res]
-   [com.fulcrologic.rad.database-adapters.crux :as crux]
+   [roterski.fulcro.rad.database-adapters.crux :as crux]
    [taoensso.timbre :as log]))
 
 (defstate automatic-resolvers

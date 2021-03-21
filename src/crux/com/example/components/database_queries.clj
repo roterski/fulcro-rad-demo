@@ -1,6 +1,6 @@
 (ns com.example.components.database-queries
   (:require
-   [com.fulcrologic.rad.database-adapters.crux-options :as co]
+   [roterski.fulcro.rad.database-adapters.crux-options :as co]
    [crux.api :as crux]
    [taoensso.timbre :as log]
    [taoensso.encore :as enc]))
