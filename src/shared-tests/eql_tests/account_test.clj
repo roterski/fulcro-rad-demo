@@ -73,6 +73,7 @@
                      :address/city
                      :address/state
                      :address/zip]}
+                   :tempids ;; move to pathom3 equivalent of mutation-join-globals
                    :com.wsscode.pathom.core/errors]}]
        response (parser {:ring/request {}} request)
        tempids (get-in response ['com.fulcrologic.rad.form/save-form :tempids])
